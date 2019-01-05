@@ -8,6 +8,4 @@
 # Production context: all deploys from the Production branch set in your site's 
 # deploy contexts will inherit these settings.
 [context.production]
-  publish = "project/output/"
-  command = "make publish"
   environment = { FAUNADB_SECRET = "fnADEA5xOfACByxxYqLuMjcaAG-KalGkPXkHq5K5" }
