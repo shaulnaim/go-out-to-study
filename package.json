@@ -9,7 +9,6 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
-    "prod": "npm run build; npm run build:lambda",
     "bootstrap": "node ./scripts/bootstrap-fauna-database.js",
     "docs": "md-magic --path '**/*.md' --ignore 'node_modules'",
     "checkForFaunaKey": "node ./scripts/check-for-fauna-key.js",
