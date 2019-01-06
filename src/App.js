@@ -9,7 +9,13 @@ import './App.css';
 class App extends Component {
 
   componentDidMount() {
-    api.readAll().then((test) => {
+
+    api.test().then()((data) => {
+      console.log('all test data', data)
+      })
+
+      
+    api.readAll().then((shioors) => {
       if (shioors.message === 'unauthorized') {
         if (isLocalHost()) {
           alert('FaunaDB key is unauthorized. Make sure you set it in terminal session where you ran `npm start`. Visit http://bit.ly/set-fauna-key for more info')
@@ -19,7 +25,7 @@ class App extends Component {
         return false
       }
 
-      console.log('test ', test)
+      console.log('all shioors', shioors)
       this.setState({
         shioors: shioors
       })
