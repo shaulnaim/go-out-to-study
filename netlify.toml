@@ -5,11 +5,11 @@
   # This is the directory is publishing to netlify's CDN
   publish = "build"
 
-[template.environment]
-  FAUNADB_SECRET = "enter Faunadb secret key"
+#[template.environment]
+ # FAUNADB_SECRET = "fnADD0896VACCKcJsJPebs-61_gNW4Qk5V6vkTxT"
 
 
 # Production context: all deploys from the Production branch set in your site's 
 # deploy contexts will inherit these settings.
-#[context.production]
- # environment = { FAUNADB_SECRET = "fnADEA5xOfACByxxYqLuMjcaAG-KalGkPXkHq5K5" }
+[context.production]
+  environment = { FAUNADB_SECRET = "fnADEA-_1eACDPe6LyMcPykjBUm2r5j79Ra9H_cM" }
