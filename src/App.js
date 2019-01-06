@@ -9,11 +9,6 @@ import './App.css';
 class App extends Component {
 
   componentDidMount() {
-
-    api.test().then()((data) => {
-      console.log('all test data', data)
-      })
-
       
     api.readAll().then((shioors) => {
       if (shioors.message === 'unauthorized') {
