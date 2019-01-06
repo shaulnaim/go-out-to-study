@@ -20,7 +20,7 @@ class App extends Component {
         return false
       }
 
-      console.log('all shioors', todos)
+      console.log('all shioors', shioors)
       this.setState({
         shioors: shioors
       })
